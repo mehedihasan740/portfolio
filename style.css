@@ -147,3 +147,32 @@ section{
 }
 
 /* Resume style */
+.resume-contation{
+    display: flex;
+    gap: 24px;
+    margin-top: 113px;
+}
+.resume-itmes{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.resume .title{
+    font-weight: 700;
+    font-size: 30px;
+    color: #474747;
+}
+.resume .staff{
+    font-weight: 700;
+    font-size: 25px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+.resume .skills{
+    font-weight: 600;
+    font-size: 20px;
+    color: #757575;
+    margin-bottom: 20px;
+}
+.resume .description{
+    color: #757575;
+}
