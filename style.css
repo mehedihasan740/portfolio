@@ -124,7 +124,7 @@ section{
 
 /* What I do style */
 
-.skils-container{
+.skills-container{
     display: flex;
     gap: 24px;
     margin-top: 50px;
@@ -211,15 +211,21 @@ input{
     .banner{
         margin: 0 20px;
         gap: 10px;
+        flex-direction: column;
     }
-    
+    .banner img{
+        width: 100%;   
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
     nav{
         margin: 0;
         flex-direction: column;
         gap: 20px;
         padding: 10px 20px;
     }
-    .skils-container, .resume-contation, .about-container, .contact{
+    .skills-container, .resume-contation, .about-container, .contact{
         flex-direction: column;
         gap: 20px;
         padding: 10px 20px;
@@ -227,13 +233,13 @@ input{
     nav ul{
         flex-direction: column;
         gap: 20px;
-        /* align-items: flex-start; */
     }
     .about, .contact{
         padding: 20px;
     }
     .contact input[type="text"],[type="email"], textarea{
         padding: 0 0 0 5px;
+        padding: 20px 0;
     }
 }
 
@@ -241,6 +247,19 @@ input{
     .contact{
         flex-direction: column;
     }
+    nav ul{
+        gap: 20px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .resume{
+        padding: 20px;
+    }
+    .what-i-do{
+        padding: 20px;
+    }
+    
 }
 
 .hide{
