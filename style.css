@@ -17,7 +17,7 @@
 }
 .header{
     background: #FFF8F3;
-    background-image: url(/images/header_bg.png), url(/images/developer.png);
+    background-image: url(images/header_bg.png), url(images/developer.png);
     background-repeat: no-repeat;
     background-position: bottom right, left;
 }
@@ -26,7 +26,8 @@
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin:0 200px;
+    padding-top: 10px;
 }
 .nav-title{
     font-weight: 800;
@@ -200,4 +201,48 @@ input{
 .contact a{
     text-decoration: none;
     margin-right: 15px;
+}
+
+/* Responsive style */
+@media screen and (max-width: 576px) {
+    .header{
+        background-image: none;
+    }
+    .banner{
+        margin: 0 20px;
+        gap: 10px;
+    }
+    
+    nav{
+        margin: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    .skils-container, .resume-contation, .about-container, .contact{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+        /* align-items: flex-start; */
+    }
+    .about, .contact{
+        padding: 20px;
+    }
+    .contact input[type="text"],[type="email"], textarea{
+        padding: 0 0 0 5px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .contact{
+        flex-direction: column;
+    }
+}
+
+.hide{
+    display: none;
 }
